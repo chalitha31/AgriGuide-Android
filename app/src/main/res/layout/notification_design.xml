@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/fullroundedcorner"
+        android:backgroundTint="@color/notificationColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="49dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logoagri" />
+
+        <TextView
+            android:id="@+id/notifyTitle"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:paddingStart="5dp"
+            android:text=" New Report Notification"
+            android:textColor="#F3EEEE"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/notifyCategory"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.365"
+            app:layout_constraintStart_toEndOf="@+id/imageView7"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/notifyType"
+            android:layout_width="0dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="8dp"
+            android:drawableStart="@drawable/dot"
+            android:drawableTint="#882D2D"
+            android:text="problems"
+            android:textColor="#A11111"
+            app:layout_constraintStart_toEndOf="@+id/notifyCategory"
+            app:layout_constraintTop_toTopOf="@+id/notifyCategory" />
+
+        <TextView
+            android:id="@+id/notifyDate"
+            android:layout_width="101dp"
+            android:layout_height="17dp"
+            android:drawableStart="@drawable/dot"
+            android:text="2023/05/13"
+            android:textColor="#1E1D1D"
+            app:layout_constraintStart_toStartOf="@+id/notifyTitle"
+            app:layout_constraintTop_toTopOf="@+id/notifyCategory" />
+
+        <TextView
+            android:id="@+id/notifyCategory"
+            android:layout_width="93dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:drawableStart="@drawable/dot"
+            android:text="Vegitables"
+            android:textColor="#1E1D1D"
+            app:layout_constraintEnd_toStartOf="@+id/notifyType"
+            app:layout_constraintStart_toEndOf="@+id/notifyDate"
+            app:layout_constraintTop_toBottomOf="@+id/notifyTitle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

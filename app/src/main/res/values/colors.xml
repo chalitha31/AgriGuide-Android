@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#1C7848</color>
+    <color name="lightblue">#1A86D3</color>
+    <color name="PlaseholderColorText">#69C193</color>
+    <color name="blackColorText">#B4B4B4</color>
+    <color name="_045daf">#045DAF</color>
+    <color name="signupbackground">#188A4E</color>
+    <color name="serchicon">#7E000000</color>
+    <color name="notificationColor">#D0227A42</color>
+    <color name="darkgreen">#0E713E</color>
+    <color name="switchOn">#FF5722</color>
+
+</resources>

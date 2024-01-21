@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/squrerounded"
+        android:backgroundTint="#8DB1AFAF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/squrerounded"
+            android:backgroundTint="#D0AFBAB3"
+            android:paddingBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/commentuserProfile"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/commentName"
+                android:layout_width="0dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:text=" New Report Notification"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/CommentDate"
+                android:layout_width="0dp"
+                android:layout_height="17dp"
+                android:layout_marginTop="14dp"
+                android:drawableStart="@drawable/dot"
+                android:text="2023/05/13"
+                android:textColor="#1E1D1D"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.04"
+                app:layout_constraintStart_toStartOf="@+id/commentContent"
+                app:layout_constraintTop_toBottomOf="@+id/commentContent" />
+
+            <TextView
+                android:id="@+id/commentContent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="14dp"
+                android:text="125364ihh ug"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/CommentDate"
+                app:layout_constraintEnd_toEndOf="@+id/commentName"
+                app:layout_constraintStart_toStartOf="@+id/commentName"
+                app:layout_constraintTop_toBottomOf="@+id/commentName" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/commentuserProfile"
+            android:layout_width="61dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="8dp"
+            android:adjustViewBounds="false"
+            android:background="@drawable/fullroundedcorner"
+            android:cropToPadding="false"
+            android:src="@drawable/avatar_2388584_640"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="2dp"
+            app:layout_constraintEnd_toStartOf="@+id/constraintLayout3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="176dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="133dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/squrerounded"
+            android:backgroundTint="@color/PlaseholderColorText"
+            android:pointerIcon="hand"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.761"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <TextView
+                android:id="@+id/reportLocation"
+                android:layout_width="100dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="32dp"
+                android:drawableStart="@drawable/location"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="Kurunegala"
+                android:textColor="#652506"
+                android:textSize="11sp"
+                app:layout_constraintStart_toEndOf="@+id/reportDate"
+                app:layout_constraintTop_toBottomOf="@+id/reportTitle" />
+
+            <TextView
+                android:id="@+id/reportDate"
+                android:layout_width="100dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="32dp"
+                android:drawableStart="@drawable/date"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="2023/05/06"
+                android:textColor="#652506"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="@+id/reportTitle"
+                app:layout_constraintTop_toBottomOf="@+id/reportTitle" />
+
+            <TextView
+                android:id="@+id/reportTitle"
+                android:layout_width="236dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="4dp"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView12"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <TextView
+                android:id="@+id/reportCategory"
+                android:layout_width="115dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="7dp"
+                android:drawableStart="@drawable/category"
+                android:drawablePadding="5dp"
+                android:text="TextView"
+                android:textSize="13sp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/reportTitle"
+                app:layout_constraintTop_toBottomOf="@+id/reportTitle" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="125dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/Report_demo"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.439"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/reportImage"
+            android:layout_width="wrap_content"
+            android:layout_height="122dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="250dp"
+            android:pointerIcon="hand"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.055"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ImageRoundedSquare"
+            tools:srcCompat="@tools:sample/avatars" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

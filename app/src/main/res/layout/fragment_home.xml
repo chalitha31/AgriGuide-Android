@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingStart="25dp"
+                    android:paddingTop="20dp"
+                    android:paddingEnd="20dp">
+
+                    <TextView
+                        android:id="@+id/v"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Vegitables"
+                        android:textColor="@color/black"
+                        android:textSize="26dp"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/vegitable"
+                        app:shapeAppearanceOverlay="@style/homeimgerounded"
+                        style="@style/homeimgerounded"
+                        android:layout_width="match_parent"
+                        android:layout_height="149dp"
+                        android:background="@drawable/imagerounded"
+                        android:src="@drawable/editvegitbles" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingStart="25dp"
+                    android:paddingTop="20dp"
+                    android:paddingEnd="20dp">
+
+                    <TextView
+                        android:id="@+id/f"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fruits"
+                        android:textColor="@color/black"
+                        android:textSize="26dp"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/fruits"
+                        app:shapeAppearanceOverlay="@style/homeimgerounded"
+                        android:layout_width="match_parent"
+                        android:layout_height="149dp"
+                        android:background="@drawable/imagerounded"
+                        android:src="@drawable/fruitss" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingStart="25dp"
+                    android:paddingTop="20dp"
+                    android:paddingEnd="20dp">
+
+                    <TextView
+                        android:id="@+id/s"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Seed"
+                        android:textColor="@color/black"
+                        android:textSize="26dp"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/seed"
+                        app:shapeAppearanceOverlay="@style/homeimgerounded"
+                        android:layout_width="match_parent"
+                        android:layout_height="149dp"
+                        android:background="@drawable/imagerounded"
+                        android:src="@drawable/seednew" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="25dp"
+                    android:paddingTop="20dp"
+                    android:paddingEnd="20dp">
+
+                    <TextView
+                        android:id="@+id/o"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/other"
+                        android:textColor="@color/black"
+                        android:textSize="26dp"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/others"
+                        app:shapeAppearanceOverlay="@style/homeimgerounded"
+                        style="@style/homeimgerounded"
+                        android:layout_width="match_parent"
+                        android:layout_height="149dp"
+                        android:background="@drawable/imagerounded"
+                        android:src="@drawable/othrs" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="223dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingStart="25dp"
+                    android:paddingTop="20dp"
+                    android:paddingEnd="20dp">
+
+                    <LinearLayout
+                        android:layout_width="166dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingStart="10dp">
+
+                        <TextView
+                            android:id="@+id/a"
+                            android:layout_width="162dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/addreport"
+                            android:textColor="@color/black"
+                            android:textSize="23dp"
+                            android:textStyle="bold" />
+
+                        <ImageButton
+                            android:id="@+id/addReport"
+                            android:layout_width="match_parent"
+                            android:layout_height="149dp"
+                            android:background="@drawable/imagerounded"
+                            android:backgroundTint="#E8CABCBC"
+                            android:src="@drawable/textadd" />
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="169dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="162dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/viewreport"
+                            android:textColor="@color/black"
+                            android:textSize="23dp"
+                            android:textStyle="bold" />
+
+                        <ImageButton
+                            android:id="@+id/viewReport"
+                            android:layout_width="match_parent"
+                            android:layout_height="149dp"
+                            android:background="@drawable/imagerounded"
+                            android:backgroundTint="#E8CABCBC"
+                            android:src="@drawable/noteicon" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeNav"
+        android:enabled="true"
+        android:icon="@drawable/home_ux_icon"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/reportNav"
+        android:enabled="true"
+        android:icon="@drawable/report"
+        android:title="@string/report"/>
+
+    <item
+        android:id="@+id/bookmarkNav"
+        android:enabled="true"
+        android:icon="@drawable/bookmark"
+        android:title="@string/bookmark"/>
+    <item
+        android:id="@+id/notifyNav"
+        android:enabled="true"
+        android:icon="@drawable/notifi"
+        android:title="@string/notification"/>
+    <item
+        android:id="@+id/profileNav"
+        android:enabled="true"
+        android:icon="@drawable/profile"
+        android:title="@string/profile"
+        android:visible="false"/>
+</menu>
