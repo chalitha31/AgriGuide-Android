@@ -53,10 +53,10 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyB3CKo1GcRzTpPviqHEfZrliTic3F1aunM" />
+            android:value="enter_api_key" />
         <meta-data
             android:name="com.google.android.gms.maps.MAPS_API_KEY"
-            android:value="AIzaSyB3CKo1GcRzTpPviqHEfZrliTic3F1aunM" />
+            android:value="enter_api_key" />
 
         <activity
             android:name=".Add_Report_Activity"
